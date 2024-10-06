@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Mongoose configuration (move connection outside handler)
 mongoose.set("strictQuery", true);
-const MONGO_URI = process.env.MONGO_URI; // Use environment variable for MongoDB URI
+const MONGO_URI = mongodb+srv://adityamodi2112:helloworld@cluster0.q4hft.mongodb.net/; // Use environment variable for MongoDB URI
 
 let isConnected = false;
 
