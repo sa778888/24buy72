@@ -1,0 +1,137 @@
+.videopage div{
+    animation: video ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes video{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+            opacity: 1;
+            transform: translateY(0px);
+    }
+}
+.videopage video{
+    animation: rv 3s 1;
+    animation-timing-function:ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.videopage video:nth-child(2){
+    animation-delay: 0.25s;
+}
+.videopage video:nth-child(2){
+    animation-delay: 0.5s;
+}
+@keyframes rv {
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg);
+        background: linear-gradient(90deg);
+    }
+}
+#video{
+    display: flex;
+    justify-content: space-around;
+    margin: 7vh;
+    font-family: 'Lexend';
+    align-items: center;
+}
+#videoleft{
+    display: -webkit-box;
+}
+#videoleft button{
+    color: #22116C;
+    height: 50px;
+    width: 50px;
+    margin-right: 1vw;
+    border-radius: 40px;
+    border: 2px solid #22116C;
+    background-color: white;
+    font-size: 2vh;
+}
+#videoright{
+    display: -webkit-box;
+}
+#videoright button{
+    color: #22116C;
+    height: 50px;
+    width: 50px;
+    margin-right: 1vw;
+    border-radius: 40px;
+    border: 2px solid #22116c;
+    font-size: 2vh;
+    background-color: white;
+}
+#video p{
+    color: #22116C;
+    width: 20vw;
+}
+#how{
+    text-align: center;
+    margin-top: 17vh;
+}
+#how h1{
+    color: #22116C;
+    margin-bottom: 0px;
+}
+@media(max-width:900px){
+    #videoright button{
+        padding: 1.5vw;
+    }
+    #videoleft button{
+        padding: 1.5vw;
+    }
+}
+@media(max-width:720px){
+    #videoright button{
+        padding: 2vw;
+    }
+    #videoleft button{
+        padding: 2vw;
+    }
+    #video p{
+        width: 30vh;
+    }
+    #video{
+        justify-content: center;
+        align-items: center;
+    }
+    .video1{
+        display: flex;
+        flex-direction: column;
+    }
+    .video2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .video3{
+        display: flex;
+        flex-direction: column;
+    }
+    .video4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media(max-width:460px){
+    #videoright button{
+        padding: 2.5vw;
+    }
+    #videoleft button{
+        padding: 2.5vw;
+    }
+}
+@media(max-width:360px){
+    #video video{
+        height: 25vh;
+    }
+}
+@media(max-width:330px){
+    #video video{
+        height: 20vh;
+        width: 30vh;
+    }
+}

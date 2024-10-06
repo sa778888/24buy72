@@ -1,0 +1,296 @@
+.ourServicePage{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#22116C;
+    font-family: 'Lexend';
+}
+.ourServicePage div{
+    animation: our ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes our {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+            opacity: 1;
+            transform: translateY(0px);
+    }
+}
+#ourh{
+    text-align: center;
+    margin-top: 7vh;
+}
+.ourServicePage h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color:#22116C;
+    margin-bottom: 10vh;
+    font-family: 'Lexend';
+}
+.ourServicePage .firstService{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.laptopService{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.mobileService{
+    display: none;
+}
+.firstService .left{
+    position: relative;
+    height:fit-content;
+    background-color: #22116C;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color:yellow;
+}
+.left h1{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color:yellow;
+    background-color: #22116C;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.left p{
+    margin-bottom: 5vh;
+    color:yellow;
+    background-color: #22116C;
+    font-size: 0.9rem;
+}
+.firstService .right{
+    position: relative;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color:yellow;
+    margin-left: 1vw;
+}
+
+.right .eachLine{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.eachLine .circle{
+    width: 30%;
+    margin-top: 0.5vh;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    background-color: #22116C;
+    border-radius: 50px;
+}
+.eachLine .content{
+    width: 90%;
+    margin-left: 2vw;
+    font-size: 0.8rem;
+}
+.content p{
+    color:#22116C;
+}
+
+p .paraheading{
+    color: #22116C;
+    font-weight: 900;
+}
+.ourServicePage .secondService{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.ourServicePage h3{
+    font-weight: 900;
+    color:#22116C;
+    margin-bottom: 1vh;
+}
+
+.secondService .left{
+    position: relative;
+    height:fit-content;
+    background-color: #22116C;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color:yellow;
+    margin-left: 2vw;
+}
+.left h1{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color:yellow;
+    background-color: #22116C;
+    font-size: 2.5rem;
+    font-weight: bold; 
+}
+.left p{
+    margin-left: 10%;
+    margin-right: 10%;
+    color:yellow;
+    background-color: #22116C;
+    font-size: 0.9rem;
+}
+
+.secondService .right{
+    position: relative;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color:yellow;
+}
+.right .eachLine{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+.extradiv p{
+    color: #22116C;
+    font-size: 0.8rem;
+}
+.ourServicePage .thirdService{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.thirdService .left{
+    position: relative;
+    height:fit-content;
+    background-color: #22116C;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color:yellow;
+}
+.thirdService .right{
+    position: relative;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    color:yellow;
+    margin-left: 2vw;
+}
+.ourServicePage .imagesSection{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    justify-content: center;
+}
+.i1{
+    animation: rotate1 3s 1;
+    animation-timing-function:ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.i2{
+    animation: rotate2 3s 1;
+    animation-timing-function:ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.ourServicePage .imagesSection:nth-child(2){
+    animation-delay: 0.25s;
+}
+.ourServicePage .imagesSection:nth-child(2){
+    animation-delay: 0.5s;
+}
+@keyframes rotate1 {
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg);
+        background: linear-gradient(90deg);
+    }
+}
+@keyframes rotate2 {
+    50% {
+        opacity: 0.5;
+        transform: rotate(180deg);
+        background: linear-gradient(90deg);
+    }
+}
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1000px) {
+    .left h1{
+        font-size: 2rem;
+    }
+    .eachLine .content{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .ourServicePage h1{
+        font-size: 2rem;
+    }
+    .ourServicePage{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .laptopService{
+        display: none;
+    }
+    .mobileService{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .mobileService .left{
+        display: flex;
+        flex-direction: column;
+        background-color: #22116C;
+        text-align: left;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .left h1{
+        color: white;
+        font-size: 3.5rem;
+    }
+    .left p{
+        color: white;
+        font-size: 1.5rem;
+        margin-top: -3vh;
+        margin-bottom: 4vh;
+    }
+    .mobileService .right{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .mobileService .imageSection{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 3vh;
+    }
+}
+@media(max-width:350px){
+    .left h1{
+        color: white;
+        font-size: 2.75rem;
+    }
+    .imageSection img{
+        width: 40vh;
+    }
+}

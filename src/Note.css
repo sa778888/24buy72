@@ -1,0 +1,224 @@
+.scrollimg{
+    display: flex;
+    overflow-x: auto;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+.scrollimg::-webkit-scrollbar{
+    display: none;
+}
+.feed{
+    margin-top: 7vh;
+    font-family: 'Lexend';
+    background-image: url('../public/feedbackbg.png');
+}
+.n{
+    text-align: start;
+    width: 15vw;
+    height: 6vh;
+    padding: 20px;
+    background-color: white;
+    color: rgba(113, 113, 113, 1);
+}
+.checked{
+    color: yellow;
+}
+.fa{
+    margin-top:3vw;
+    margin-bottom: 1vw;
+    background-color: white;
+}
+.star{
+    border-radius: 10px;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 40px;
+    text-align: center;
+}
+.start1{
+    padding:20px;
+    display: flex;
+}
+#feedback{
+    text-align: center;
+}
+#feedback h1{
+    margin-top: 7vh;
+    margin-bottom:2vh;
+    color:rgba(34, 17, 108, 1);
+}
+#feedback p{
+    color:rgba(173, 173, 173, 1)
+}
+#feedbackpic{
+    display: flex;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    background-color: white;
+}
+#feedbackpic img{
+    background-color: white;
+}
+#name{
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color:rgba(34, 17, 108, 1);
+    justify-content: start;
+    align-items: start;
+}
+#name h2{
+    color:rgba(34, 17, 108, 1);
+    background-color: white;
+    font-size: 3vh;
+}
+#name h5{
+    font-size: 1.5vh;
+    color:rgba(34, 17, 108, 1);
+    background-color: white;
+}
+.feedbacksection{
+    background-color: white;
+}
+#post{
+    width: 10vw;
+    height: 7vh;
+    font-size: 0.75rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgba(34, 17, 108, 1);
+    font-family: 'Lexend';
+    cursor: pointer;
+    transition: 300ms;
+    color: #FFE600;
+}
+#post:hover{
+    background-color: #FFE600;
+    color: rgba(34, 17, 108, 1);
+}
+#postbutton{
+    display: flex;
+    justify-content: center;
+    font-family: 'Lexend';
+}
+@media(max-width:1300px){
+    .n{
+        width: 17vw;
+        height: 8vh;
+    }
+    #post{
+        width: 15vw;
+        margin: 1vh;
+    }
+}
+@media(max-width:1050px){
+    .n{
+        width: 21vw;
+        height: 8vh;
+    }
+    #post{
+        width: 17vw;
+        margin: 1vh;
+    }
+}
+@media(max-width:900px){
+    .n{
+        width: 23vw;
+        height: 8vh;
+    }
+}
+@media(max-width:800px){
+    .n{
+        width: 25vw;
+        height:8vh;
+    }
+    #feedbackpic img{
+        height: 7vh;
+        width: 7vh;
+    }
+}
+@media(max-width:740px){
+    .n{
+        width: 30vw;
+        height: 10vh;
+    }
+    #post{
+        width: 19vw;
+        margin: 1vh;
+    }
+}
+@media(max-width:650px){
+    .n{
+        width: 32vw;
+        height: 14vh;
+    }
+    #post{
+        width: 25vw;
+        margin: 1vh;
+    }
+    #feedbackpic img{
+        height: 7vh;
+        width: 7vh;
+    }
+}
+@media(max-width:530px){
+    .n{
+        width: 40vw;
+        height: 10vh;
+    }
+    #feedbackpic img{
+        height: 6vh;
+        width: 6vh;
+    }
+    #post{
+        width: 27vw;
+        margin: 1vh;
+    }
+}
+@media(max-width:470px){
+    .n{
+        width: 45vw;
+        height: 15vh;
+    }
+    #post{
+        width: 30vw;
+        margin: 1vh;
+    }
+}
+@media(max-width:380px){
+    .n{
+        width: 50vw;
+        height: 20vh;
+    }
+    #name h2{
+        color:rgba(34, 17, 108, 1);
+        background-color: white;
+        font-size: 2vh;
+    }
+    #feedbackpic img{
+        height: 5vh;
+        width: 5vh;
+    }
+    #post{
+        width: 35vw;
+        margin: 1vh;
+    }
+}
+@media(max-width:335px){
+    #post{
+        width: 37vw;;
+    }
+}
+@media(max-width:300px){
+    .n{
+        width: 50vw;
+        height: 20vh;
+    }
+    #post{
+        width: 45vw;
+        margin: 1vh;
+    }
+}

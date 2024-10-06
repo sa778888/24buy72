@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Lexend';
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-image: url('/public/navbarbg.png');
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lexend';
+    width: 100%;
+}
+#navleft{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin-left: 7vw;
+}
+#navleft h1{
+    font-size: 3vh;
+    color: #FFFF00;
+}
+#navleft p{
+    font-size: 1.5vh;
+    color: #FFFF00;
+}
+#navright{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+    width: 50%;
+    height: 4vh;
+    margin-right: 2vw;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-family: 'Lexend';
+    font-size: 1.2rem;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+#navright select{
+    border: none;
+    color: #FFE600;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+#navright select option{
+    border: none;
+    color: #FFE600;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+#b1{
+    border: none;
+    background-color: transparent;
+}
+#b1 a{
+    color: #FFE600;
+}
+#navright .active {
+    position: relative;
+    display: flex;
+    background-color: yellow;
+    height: 5vh;
+    width:max-content;
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+    color:#22116C;
+    transition: 300ms;
+}
+  #navright .active:hover a{
+    color: #22116C; /* Blue text color on hover for links */
+  }
+  #navright .active:hover select{
+    color: #22116C; /* Blue text color on hover for links */
+  }
+  
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #FFE600;
+    margin-top: 1vh;
+    margin-right: 1vw;
+    z-index: 1001;
+}
+@media(max-width: 1700px){
+    #navright{
+        width: 45%;
+    }
+    a{
+        font-size: 0.9rem;
+    }
+    #navright select{
+        font-size: 0.9rem;
+    }
+    #navright select option{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1300px){
+    #navright{
+        margin-top: 0.5vh;
+    }
+    a{
+        font-size: 0.9rem;
+    }
+    #navright select{
+        font-size: 0.9rem;
+    }
+    #navright select option{
+        font-size: 0.9rem;
+    }
+    #navbar{
+        background-image: url('../public/nav.png');
+        height: 30vh;
+    }
+    #navleft{
+        margin-top: 3vh;
+    }
+    #navright{
+        margin-top: 5vh;
+    }
+}
+@media(max-width:1100px){
+    a{
+        font-size: 0.7rem;
+    }
+    #navright select{
+        font-size: 0.7rem;
+    }
+    #navright select option{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 950px){
+    
+    #navbar{
+        height: 25vh;
+    }
+}
+@media screen and (max-width: 830px) {
+    #navleft{
+        margin-top: 1vh;
+    }
+    .hamburger {
+        display: block;
+        margin-top: -18vh;
+        margin-right: 3vh;
+    }
+    #navright {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #22116C;
+        position: absolute;
+        top: 1vh;
+        right: 0;
+        align-items: center;
+        height: 30vh;
+        padding-top: 2vh;
+    }
+    #navright.open {
+        display: flex;
+    }
+    #b1{
+        margin-bottom: 2vh;
+    }
+    #b1 #home{
+        border:none;
+        background-color: transparent;
+        color: #FFE600;
+    }
+    #navright a,
+    #navright select {
+        margin-right: 0;
+        margin-bottom: 2vh;
+        font-size: 1rem;
+    }
+    #navright select option{
+        margin-right: 0;
+        margin-bottom: 2vh;
+        font-size: 1rem;
+    }
+}
+@media(max-width:600px){
+    #navleft img{
+        height: 7vh;
+        width: 7vh;
+    }
+    #navleft{
+        margin-top: 1vh;
+    }
+    #navbar{
+        height: 20vh;
+    }
+    .hamburger{
+        margin-top: -10vh;
+    }
+}
+@media(max-width:500px){
+    #navleft img{
+        height: 6vh;
+        width: 6vh;
+    }
+    #navleft{
+        margin-top: 0px;
+    }
+    .hamburger{
+        margin-top: -12vh;
+    }
+    #navbar{
+        height: 15vh;
+    }
+    .hamburger{
+        margin-top: -8vh;
+    }
+}
+@media(max-width:450px){
+    #navleft img{
+        height: 5vh;
+        width: 5vh;
+        margin-top: -1vh;
+    }
+    #navleft{
+        margin-top: -1vh;
+    }
+}

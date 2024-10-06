@@ -1,0 +1,193 @@
+#cocacola{}
+#haldiram{}
+#nestle{
+    margin-top: -5vh;
+    margin-left: 10vh;
+}
+#balaji{
+    margin-top: 5vh;
+}
+#amul{
+    margin-top: -5vh;
+    margin-left: 20vh;
+}
+#itc{
+    margin-top: -5vh;
+}
+#chedda{
+    height: 10vh;
+}
+#cavin{
+    margin-top: 15vh;
+}
+#monginis{
+    margin-left: -10vh;
+}
+#wafflemill{
+    margin-right: 20vh;
+    margin-top: -1vh;
+    height: 20vh;
+}
+#snackible{
+    margin-top: 10vh;
+    margin-left: -10vh;
+    margin-right: 10vh;
+}
+#paperboat{}
+#part1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#brandby{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+}
+#brandby h1{
+    margin: 2vh;
+    text-align: center;
+}
+#brandby p{
+    color: #808080;
+    font-family: "Lexend";
+    text-align: center;
+    width: 70vh;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+.brandbybutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#brandbyb{
+    width: 13vw;
+    height: 7vh;
+    border: 2px solid #22116C;
+    border-radius: 10px;
+    color:#FFE600;
+    background-color: #22116C;;
+}
+.BrandBy{
+    animation-duration: 1s;
+    animation-name: brandby;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timeline:view();
+    animation-range: entry 0;
+}
+@keyframes brandby {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+@media(max-width:950px){
+    #part1{
+        flex-wrap: wrap;
+    }
+#cocacola{
+    margin: 0px;
+}
+#haldiram{
+    margin: 0px;
+}
+#nestle{
+    margin: 0px;
+}
+#balaji{
+    margin: 0px;
+}
+#amul{
+    margin: 0px;
+}
+#itc{
+    margin: 0px;
+}
+#chedda{
+    margin: 0px;
+}
+#cavin{
+    margin: 0px;
+}
+#monginis{
+    margin: 0px;
+}
+#wafflemill{
+    margin: 0px;
+}
+#snackible{
+    margin: 0px;
+}
+#paperboat{
+    margin: 0px;
+}
+}
+#image{
+    display: none;
+}
+@media(max-width:720px){
+    #part1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #images{
+        display: none;
+    }
+    #image{
+        display: block;
+        display: flex;
+        overflow-x: auto;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    #image img{
+        margin: 5vh;
+    }
+}
+@media(max-width:610px){
+    #image img{
+        margin: 3vh;
+    }
+}
+@media(max-width:570px){
+    #image{
+        margin-left: 16vw;
+        margin-right: 16vw;
+    }
+}
+@media(max-width:480px){
+    #brandby p{
+        width: 45vh;
+    }
+    #image img{
+        height: 17vh;
+    }
+    #image{
+        margin-left: 13vw;
+        margin-right: 13vw;
+    }
+}
+@media(max-width:390px){
+    #image img{
+        height: 15vh;
+        width: 15vh;
+    }
+}
+@media(max-width:340px){
+    #image img{
+        margin: 2.25vw;
+    }
+    #brandby p{
+        width:40vh;
+    }
+}

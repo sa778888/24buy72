@@ -1,0 +1,150 @@
+.introbg{
+    background-image: url('../public/introbg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    background-size: cover;
+}
+#intro p{
+    font-family: "Lexend";
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: intro;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000px);
+}
+@keyframes intro {
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+#intro .heading{
+    font-family: 'Karantina';
+    color: #22116C;
+    font-size: 10vh;
+    text-align: center;
+    width: 55vw;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.intro{
+    color: #6A6A6A;
+    text-align: center;
+    width: 40vw;
+    margin: 8vh;
+    font-family: "Lexend";
+    margin-top:6vh;
+}
+#introbutton{
+    display: flex;
+    animation-duration: 1s;
+    animation-name: intro;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000px);
+    justify-content: space-around;
+}
+#introb{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    color: #FFE600;
+}
+@media(max-width:1000px){
+    .intro{
+        margin: 6vh;
+        width: 50vw;
+    }
+    .heading{
+        font-size: 8vh;
+    }
+    .introbg{
+        height: 70vh;
+    }
+}
+@media(max-width:790px){
+    .heading{
+        font-size: 8vh;
+    }
+    #intro .heading{
+        width: 70vw;
+    }
+    #introb{
+        flex-direction: column;
+        align-items: center;
+    }
+    #introbutton{
+        margin-top: -10vh;
+    }
+    .introbg{
+        height: 85vh;
+    }
+    .intro{
+        width: 60vw;
+    }
+}
+@media(max-width:570px){
+    .introbg{
+        height: 100vh;
+    }
+    #intro .heading{
+        width: 70vw;
+    }
+}
+@media(max-width:520px){
+    .heading{
+        font-size: 6vh;
+    }
+    #intro .heading{
+        width: 70vw;
+    }
+    #introbutton{
+        margin-top: -15vh;
+    }
+    .introbg{
+        height: 100vh;
+    }
+    .intro{
+        width: 60vw;
+    }
+}
+@media(max-width:450px){
+    .introbg{
+        height: 110vh;
+    }
+}
+@media(max-width:400px){
+    .heading{
+        font-size: 5vh;
+    }
+    .introbg{
+        height: 115vh;
+    }
+}
+@media(max-width:360px){
+    .introbg{
+        height: 120vh;
+    }
+    #intro .heading{
+        font-size: 8vh;
+    }
+}
+@media(max-width:320px){
+    .introbg{
+        height: 125vh;
+    }
+}
